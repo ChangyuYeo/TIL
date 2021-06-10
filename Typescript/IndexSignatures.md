@@ -21,7 +21,7 @@ interface StringType {
 
 const people: StringType = {
   name: 'jebong',
-  age: '24'
+  age: '24',
   email: 'asd@asd'
 }
 ```
@@ -38,7 +38,7 @@ interface StringType {
 
 const people: StringType = {
   name: 'jebong',
-  age: 24
+  age: 24,
   email: 'asd@asd'
 }
 ```
