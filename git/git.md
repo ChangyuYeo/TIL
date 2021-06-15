@@ -15,7 +15,7 @@ Git은 내부적으로 3가지 종류의 작업 영역이 있다. <br />
 `commit`을 하게되면 `staging area`에 있는 파일들만 `commit`에 반영되게 된다.
 <br />
 
-### repository (리포지토리)
+### repository (레포지토리)
 `repository`는 `working directory`의 변경 이력들이 저장되어 있는 영역을 의미한다. <br />
 즉, `commit`이 반영된 파일들이 저장되는 공간이며, `staging area`에 있는 파일을 하나의 버전으로 `repository`에 저장하게 된다.
 <br />
