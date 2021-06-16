@@ -1,4 +1,4 @@
-# github 사용 기본 정리
+# github를 활용할 수 있는 커멘드 정리
 ## git push
 `local repository`의 내용을 GitHub의 `remote repository`에 보내고 싶을때, <br />
 `git push` 커멘드를 사용하면 된다.
@@ -21,3 +21,18 @@ git push origin 'branch명'
 ```
 git pull
 ```
+<br />
+
+## git clone
+`git clone` 커멘드는 github의 프로젝트를 가져오기 위해 사용하는 커멘드이다.
+
+```
+git clone 'repository주소'
+```
+<br />
+
+명령어 | 설명
+--- | ---
+git push | `local repository`를 `remote repository`으로 보내기
+git pull | `remote repository`에서 `local repository`으로 가져오기
+git clone | gitHub에 있는 프로젝트를 내 컴퓨터로 가져오기
