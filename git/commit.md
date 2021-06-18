@@ -35,3 +35,40 @@ git config alias.history 'log --pretty=oneline'
 ```
 
 이런식으로 명령을 실행하면 **git histroy**라고만 써도 자동으로 `git log --pretty=oneline`을 실행하게 된다.
+<br />
+
+## git reset 
+`git reset` 커멘드는 시간을 돌려 과거의 특정 커밋으로 되돌리는 커멘드이다. 
+
+옵션 | working directory | staging area | repository | 주용도
+:---: | :---: | :---: | :---: | :---:
+--soft | 안 바뀜 | 안 바뀜 | HEAD와 같이 움직임 | branch 이동
+--mixed | 안 바뀜 | 지정한 commit과 동일 내용 | HEAD와 같이 움직임 | Staging Area에서 빼기
+--hard | 지정한 commit과 동일 내용 | 지정한 commit과 동일 내용 | HEAD와 같이 움직임 | commit 되돌리기
+
+```
+git reset '옵션' '커밋 아이디'
+```
+
+여기서 커밋 아이디 대신에 커밋 히스토리를 이용해 좀 더 간단하게 사용할 수 있다.
+```
+git reset --hard HEAD~2
+```
+위 명령을 실행하면 HEAD가 이제 3번 커밋을 가리키게 된다.
+<br />
+
+## git tag
+커밋을 넘길 때 커밋메시지와 같이 남기게 되는데 그 커밋 중에서 다른 커밋보다 좀더 중요한 의미가 있는 커밋들도 있게될 수 있다. <br />
+이럴 때 `git tag` 커멘드를 이용해서 추가적인 tag를 작성할 수 있다.
+
+```
+git tag '태그 이름' '커밋 아이디'
+```
+위 명령으로 해당 커밋에 tag를 작성해 표시할 수 있다. <br />
+
+만약 각 태그와 연결된 커밋이 보고 싶으면,
+
+```
+git show '태그 이름'
+```
+명령으로 실행해서 간편하게 커밋들의 상황을 파악할 수 있다.
