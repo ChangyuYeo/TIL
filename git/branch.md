@@ -37,3 +37,15 @@ git merge 'branch명'
 ```
  git merge --abort
 ```
+<br />
+
+## branch 관련 커멘드 정리
+
+```javascript
+git branch 'branch 이름'  // 새로운 브랜치를 생성
+git checkout -b 'branch 이름'  // 새로운 브랜치를 생성하고 그 브랜치로 바로 이동
+git branch -d 'branch 이름'  // 브랜치 삭제
+git checkout 'branch 이름'  // 그 브랜치로 이동
+git merge 'branch 이름'  // 현재 브랜치에 다른 브랜치를 머지
+git merge --abort  // 머지를 하다가 conflict가 발생했을 때, 일단은 머지 작업을 취소하고 이전 상태로 돌아감
+```
