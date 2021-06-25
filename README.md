@@ -35,7 +35,7 @@
 - [Constructor](Javascript/Constructor.md)
 - [Destructuring](Javascript/Destructuring.md)
 - [Extends](Javascript/Extends.md)
-- [Function_ES6](Javascript/Function_ES6.md)
+- [Function](Javascript/Function.md)
 - [Getter_Setter](Javascript/Getter_Setter.md)
 - [Loop](Javascript/Loop.md)
 - [Map](Javascript/Map.md)
