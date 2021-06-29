@@ -2,10 +2,13 @@
 리액트의 주요 기본 개념을 공부하고 정리..!
 <br />
 ## 📌 Index <br />
-1. [JSX 란?](#jsx_란?)
+1. [JSX](#jsx)
+1. [Props](#props)
 <br /><br />
+---
+<br />
 
-# JSX 란?
+# JSX
 보통의 JSX 문법은
 ```javascript
 const element = <h1>Hello, world!</h1>
@@ -42,3 +45,19 @@ JSX의 가독성을 좋게 하기 위해 여러 줄로 나누고, 자동으로 �
 - 또한 속성은 항상 쌍따옴표를 감싸야 하며,
 - 태그는 항상 닫혀있어야 된다. 즉, 반드시 `클로징 태그`를 사용해야 된다.
 <br /><br />
+---
+<br />
+
+## Component와 Props
+### Component
+Component를 통해 UI를 **재사용이 가능한** 각각의 조각으로 나누고, 각 조각을 개별적으로 사용할 수 있다.
+<br />
+
+컴포넌트는 함수를 만들어 정의할 수 있다.
+```javascript
+function MyName(props) {
+  return <h1>Hello, {props.name}</h1>
+}
+```
+<br />
+컴포넌트 랜더링

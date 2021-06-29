@@ -73,6 +73,7 @@
 
 - [Controlled](React/Controlled.md)
 - [HOC](React/HOC.md)
+- [ReactBasic](React/ReactBasic.md)
 - [Router](React/Router.md)
 - [Styling](React/Styling.md)
 
