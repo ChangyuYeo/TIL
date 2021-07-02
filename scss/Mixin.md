@@ -9,24 +9,26 @@
 @include 이름(인수)  //사용
 ```
 <br />
+Mixin 사용방법
 
 - 앞에 `@Mixin`을 쓰고 이름을 정해준 후, 중괄호 `{ }` 안에 중복되는 코드를 넣어준다.
 - `@include`를 사용하여 스타일 하고자 하는 요소에 포함 시키면 된다.
 - mixin은 파일을 만들어서 import하여 사용하거나, mixin을 사용할 파일 내에서 선언 후 사용할 수 있다. 
 - 이때, 여러 개의 mixin을 만들어 사용한다면, `_mixins.scss` 파일을 만들어서 관리한다.
+<br />
 
 ```scss
-@mixin center-xy{
+@mixin center-xy {
 	display: flex;
 	justify-content : center;
 	align-items : center;
+};
+
+.card {
+	@include center-xy;
 }
 
-.card{
-	@include center-xy; // 정의한 center-xy mixin을 사용하여 코드 한줄이면 끝!
-}
-
-.aside{
+.aside {
 	@include center-xy; 
 }
 ```
