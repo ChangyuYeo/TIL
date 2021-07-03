@@ -53,11 +53,11 @@
 
 ### 📌nodejs
 
-- [Express](Node.js/Express.md)
-- [NodeJS](Node.js/Nodejs.md)
-- [NPM](Node.js/NPM.md)
-- [NVM](Node.js/NVM.md)
-- [REST API](Node.js/REST_API.md)
+- [Express](nodejs/Express.md)
+- [NodeJS](nodejs/Nodejs.md)
+- [NPM](nodejs/NPM.md)
+- [NVM](nodejs/NVM.md)
+- [REST API](nodejs/REST_API.md)
 
 ---
 
@@ -80,7 +80,11 @@
 
 ### 📌scss
 
-- [scss]()
+- [Extend](scss/Extend.md)
+- [If](scss/If.md)
+- [Mixin](scss/Mixin.md)
+- [Nesting](scss/Nesting.md)
+- [Variable](scss/Variable.md)
 
 ---
 
