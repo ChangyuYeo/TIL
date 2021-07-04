@@ -81,6 +81,7 @@
 ### 📌scss
 
 - [Extend](scss/Extend.md)
+- [For](scss/For.md)
 - [If](scss/If.md)
 - [Mixin](scss/Mixin.md)
 - [Nesting](scss/Nesting.md)
