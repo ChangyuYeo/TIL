@@ -6,6 +6,7 @@
 1. [Component](#Component)
 1. [Props](#props)
 1. [State](#State)
+1. [LifeCycle](#LifeCycle)
 <br />
 
 # JSX
@@ -96,7 +97,7 @@ const App = () => <Props name="Jebong" />
 
 export default App
 ```
-<br /><br />
+<br />
 
 ---
 <br />
@@ -109,16 +110,20 @@ export default App
 1. 직접 state를 수정하면 안된다.
     - 직접 state의 값을 수정할 수 있지만, 컴포넌트를 다시 랜더링 하지 않기 때문이다. 
     - 대신 `setState()` 메소드를 사용해서 수정한다.
+
 2. state의 업데이트는 `비동기적`일 수도 있다.
+
 3. state의 업데이트는 `병합`이 된다.
     - `setState()`를 호출할 때 react는 제공한 객체를 현재 state로 병합하게 된다.
     - 별도의 `setState()`를 호출하면 변수를 독립적으로 관리할 수 있게 된다.
+
 4. state의 **데이터는 아래로 흐른다.**
     - state는 `로컬 또는 캡슐화` 라고 불리는데, state를 관리하고 있는 컴포넌트 <br />
     이외에는 **어떠한 컴포넌트에도 접근할 수 없다.**
     - 컴포넌트는 자신의 state를 자식 컴포넌트에게 props로 전달 해 줄수 있는데, <br /> 
     이를 `하향식(top-down)` 또는 `단방향식 데이터 흐름` 이라고 한다.
     - 오직 자신의 아래에 있는 컴포넌트에만 영향을 미친다.
+<br />
 
 state를 이용해 시간을 보여주는 예제
 ```javascript
@@ -142,4 +147,67 @@ function Clock() {
 }
 
 export default Clock
+```
+<br />
+
+---
+<br />
+
+# LifeCycle
+React 컴포넌트에는 생명주기가 있으며, 특정 시점에서 코드를 실행할 수 있다.
+<br />
+
+## componentDidMount()
+- 컴포넌트가 마운트 된 직후에 호출된다.
+- 마운트는 컴포넌트의 인스턴스가 생성되어 DOM의 부착되는시점을 말한다.
+- DOM 노드가 있어야 하는 초기화 작업시 사용하게 된다.
+- 또한 외부에서 네트워크 요청을 통해 데이터를 불러오는경우에도 사용된다.
+<br />
+
+## componentDidUpdate()
+- 컴포넌트가 업데이트 된 직후에 호출된다. (최초 랜더링시에는 호출되지 않는다.)
+- 컴포넌트가 업데이트 되었을 때 DOM을 조작하거나 props를 비교해서 해당 요청을 보내는 작업시 사용하게 된다.
+<br />
+
+## componentWillUnmount()
+- 마운트가 해제되어 제거되기 직전에 호출된다.
+- 타이머 제거, 네트워크 요청 취소, 마운트에서 연결된 데이터 해제할 때 사용된다.
+- 컴포넌트가 마운트 해제 되고 나면 다시 마운트가 되지 않기 때문에 `Unmount 내에서는 setState()를 호출하면 안된다.`
+<br />
+
+실제 호출 시점 출력해보기
+```javascript
+import React, { Component } from 'react'
+
+export default class LifeCycle extends Component {
+	constructor(props) {
+		super(props)
+		console.log('constructor')
+		this.state = { date: new Date() }
+	}
+
+	componentDidMount() {
+		console.log('componentDidMount')
+		this.timerID = setInterval(() => this.tick(), 1000)
+	}
+
+	componentDidUpdate() {
+		console.log('componentDidUpdate')
+	}
+
+	componentWillUnmount() {
+		console.log('componentWillUnmount')
+		clearInterval(this.timerID)
+	}
+
+	tick() {
+		console.log('tick')
+		this.setState({ date: new Date() })
+	}
+
+	render() {
+		console.log('render')
+		return <h2>{this.state.date.toLocaleTimeString()}</h2>
+	}
+}
 ```
