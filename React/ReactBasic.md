@@ -1,5 +1,5 @@
 # 리액트 기본 개념 정리
-리액트의 주요 기본 개념을 공부하고 정리..!
+리액트의 주요 기본 개념을 공식문서를 통해 공부하고 정리..!
 <br />
 ## 📌 Index <br />
 1. [JSX](#jsx)
@@ -7,6 +7,7 @@
 1. [Props](#props)
 1. [State](#State)
 1. [LifeCycle](#LifeCycle)
+1. [Event](#Event)
 <br />
 
 # JSX
@@ -210,4 +211,76 @@ export default class LifeCycle extends Component {
 		return <h2>{this.state.date.toLocaleTimeString()}</h2>
 	}
 }
+```
+<br /><br />
+
+---
+<br />
+
+# Event
+React 엘리먼트는 `합성 이벤트(SynthenticEvent)`를 이용해서 이벤트로 처리할 수 있다.
+<br />
+React에서 Event를 작성하는 몇가지 규칙이있는데,
+- 소문자가 아닌 카멜케이스로 작성한다.
+- 문자열이 아닌 함수로 전달한다.
+
+```javascript
+// 기존 HTML
+<div onclick="onClickBtn()">Button</div>
+
+// React
+return <div onClick={onClickBtn}>Button</div>
+```
+<br />
+
+기존 HTML과 또 다른 차이점은 기본 동작을 방지 하는 법이 다른데 React 에서는 `preventDefault`를 사용해야 된다. 
+<br />
+
+## 이벤트의 This
+전달된 이벤트에서 This를 호출한 경우의 This는 Undefined가 되는데, 
+<br />
+JavaScript에서 클래스 메서드는 기본적으로 바인딩되어 있지 않기 때문이다.
+<br />
+
+## 이벤트 버블링
+이벤트 헨틀러는 이벤트 버블링 단계에서 호출이 되는데, 
+<br />
+캡처 단게에서 이벤트를 등록하고 싶다면 이벤트 이름에 `Captrue`를 붙히면 된다.
+<br />
+(이벤트는 캡처링 후에 버블링이 일어난다.)
+<br />
+
+```javascript
+import React from 'react'
+
+function Event() {
+	const onClickBtn = e => {
+		console.log('onClickBtn')
+	}
+
+	const onClickCaptureBtn = () => {
+		console.log('onClickCaptureBtn')
+	}
+
+	const onClickCaptureBtn2 = () => {
+		console.log('onClickCaptureBtn2')
+	}
+
+	const onClickBubble = () => {
+		console.log('onClickBubble')
+	}
+
+	return (
+		<div onClickCapture={onClickCaptureBtn}>
+			{/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
+			<div onClickCapture={onClickCaptureBtn2} onClick={onClickBubble}>
+				<button onClick={onClickBtn} type="button">
+					버튼
+				</button>
+			</div>
+		</div>
+	)
+}
+
+export default Event
 ```
