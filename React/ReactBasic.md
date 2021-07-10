@@ -254,32 +254,33 @@ JavaScript에서 클래스 메서드는 기본적으로 바인딩되어 있지 �
 import React from 'react'
 
 function Event() {
-	const onClickBtn = e => {
-		console.log('onClickBtn')
-	}
+  const onClickBtn = e => {
+    console.log('onClickBtn')
+  }
 
-	const onClickCaptureBtn = () => {
-		console.log('onClickCaptureBtn')
-	}
+  const onClickCaptureBtn = () => {
+    console.log('onClickCaptureBtn')
+  }
 
-	const onClickCaptureBtn2 = () => {
-		console.log('onClickCaptureBtn2')
-	}
+  const onClickCaptureBtn2 = () => {
+    console.log('onClickCaptureBtn2')
+  }
 
-	const onClickBubble = () => {
-		console.log('onClickBubble')
-	}
+  const onClickBubble = () => {
+    console.log('onClickBubble')
+  }
 
-	return (
-		<div onClickCapture={onClickCaptureBtn}>
-			{/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
-			<div onClickCapture={onClickCaptureBtn2} onClick={onClickBubble}>
-				<button onClick={onClickBtn} type="button">
-					버튼
-				</button>
-			</div>
-		</div>
-	)
+  return (
+    <div onClickCapture={onClickCaptureBtn}>
+      <div 
+        onClickCapture={onClickCaptureBtn2} 
+        onClick={onClickBubble}>
+        <button onClick={onClickBtn} type="button">
+          버튼
+        </button>
+      </div>
+    </div>
+  )
 }
 
 export default Event
