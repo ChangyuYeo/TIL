@@ -1,4 +1,4 @@
-# ✍🏻TIL(Today I Learned) 
+# ✍🏻TIL(Today I Learned)
 
 <h3>2021/07/15~</h3>
 📚 오늘 공부한 것들을 기록하는 저장소 입니다! 공부해야 해요
@@ -9,19 +9,20 @@
 - 주말에는 다시 한번씩 훑어보기
 
 > The only thing worse than starting something and failing ... is not starting something. <br />
-> 무언가를 시작하고 실패하는 것보다 더 나쁜 것은…아무것도 시작하지 않는 것이다. <br />
-> \- Seth Godin
+> 무언가를 시작하고 실패하는 것보다 더 나쁜 것은…아무것도 시작하지 않는 것이다. <br /> > \- Seth Godin
 
 <br />
 
 ## Index(목차)
 
 ### 📌etc
+
 - [Markdown](etc/Markdown.md)
 
 ---
 
 ### 📌git
+
 - [branch](git/branch.md)
 - [commit](git/commit.md)
 - [git](git/git.md)
@@ -30,6 +31,7 @@
 ---
 
 ### 📌javascript
+
 - [ArrowFunction](Javascript/ArrowFunction.md)
 - [Class](Javascript/Class.md)
 - [Constructor](Javascript/Constructor.md)
@@ -66,6 +68,7 @@
 - [List](Python/List.md)
 - [Module](Python/Module.md)
 - [PEP8](Python/PEP8.md)
+- [PythonBasic](Python/PythonBasic.md)
 
 ---
 
