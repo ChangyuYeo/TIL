@@ -1,10 +1,11 @@
-## 제어 컴포넌트 (Controlled Component)
+# 제어 컴포넌트 (Controlled Component)
 <b>상태를 가지고 있는 엘리먼트 에서 엘리먼트</b>는 일반적으로 사용자의 입력을 기반으로 자신의 state를 관리하고 업데이트한다 <br />
 React에서는 변경할 수 있는 state가 일반적으로 컴포넌트의 state 속성에 유지되며 setState()에 의해 업데이트된다 <br />
 
 우리는 React state를 `single source of truth`로 만들어 두 요소를 결합할 수 있어 폼을 렌더링하는 React 컴포넌트는 <br />
 폼에 발생하는 사용자 입력값을 제어한다 <br />
 이러한 방식으로 React에 의해 값이 제어되는 입력 폼 엘리먼트를 `Controlled Component` 라고 한다.
+
 <br />
 
 ## 상태를 가지고 있는 엘리먼트
@@ -56,7 +57,7 @@ export default ControlledComponent
 - 다른 UI 엘리먼트에 input의 값을 전달하거나 다른 이벤트 핸들러에서 값을 재설정할 수 있다
 <br />
 
-## 비제어 컴포넌트 (UnControlled Component)
+# 비제어 컴포넌트 (UnControlled Component)
 HTML의 태그 중에서는 태그 자체적으로 상태를 갖는 경우가 있는데 <br />
 입력 폼에서 값을 입력하면 해당 값은 입력 폼 내부의 상태로 관리된다.
 <br />
