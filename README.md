@@ -9,10 +9,10 @@ variety of languages and technologies.
 
 ### React
 
-- [Controlled](#React/Controlled.md)
-- [HOC](#React/HOC.md)
-- [Router](#React/Router.md)
-- [Styling](#React/Styling.md)
+- [Controlled](React/Controlled.md)
+- [HOC](React/HOC.md)
+- [Router](React/Router.md)
+- [Styling](React/Styling.md)
 
 ---
 
