@@ -1,5 +1,4 @@
-# HOC
-### Higher-Order Components, 고차 컴포넌트
+# Higher-Order Components, 고차 컴포넌트
 - 컴포넌트 로직을 `재사용, 재활용` 하기 위한 React의 고급 기술
 - React API와는 전혀 관련이 없다
 - 리액트의 구성적 특성에서 나오는 패턴
