@@ -5,6 +5,7 @@ React에서는 변경할 수 있는 state가 일반적으로 컴포넌트의 sta
 우리는 React state를 `single source of truth`로 만들어 두 요소를 결합할 수 있어 폼을 렌더링하는 React 컴포넌트는 <br />
 폼에 발생하는 사용자 입력값을 제어한다 <br />
 이러한 방식으로 React에 의해 값이 제어되는 입력 폼 엘리먼트를 `Controlled Component` 라고 한다.
+
 <br />
 
 ## 상태를 가지고 있는 엘리먼트
