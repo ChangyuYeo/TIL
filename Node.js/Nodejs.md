@@ -1,6 +1,6 @@
 # NodeJS에 대한 간단한 정리
 NodeJS란? <br />
-<img src="./img/Nodejs01.PNG" alt="NodeJS의 설명" style="margin:10px 0"> <br />
+<img src="./img/Nodejs01.PNG" alt="NodeJS의 설명" style="margin:20px 0"> <br />
 Chrome V8 Javascript 엔진으로 빌드된 Javascript 런타임이다.
 <br />
 <h2>HTML</h2>
