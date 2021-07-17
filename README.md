@@ -27,6 +27,6 @@
 
 ### 📌NodeJS
 
-- [📌NodeJS](📌Node.js/Nodejs.md)
+- [NodeJS](Node.js/Nodejs.md)
 
 ---
