@@ -1,7 +1,37 @@
 # Express
+Express는 웹앱을 위한 Node.js 웹 애플리케이션 프레임워크 이다 <br />
 Node.JS에서 웹 프레임 워크를 사용하면 간편하게 웹 서버를 구축할 수 있다. <br />
-Express는 웹앱을 위한 일련의 강력한 기능을 제공하는 간결하고 유연한 Node.js 웹 애플리케이션 프레임워크
+<br /><br />
+
+## express 개념
+- 어플리케이션
+- 미들웨어
+- 라우팅
+- req, res (요청, 응답)
 <br />
+
+### 미들웨어란?
+클라이언트에서 req(요청),res(응답) 사이 중간(미들)에 위치하는 함수로, 요청과 응답 사이클에서 중간에 거쳐가는 함수들이라고 생각하면된다 <br />
+보통 use() 라는 함수를 사용하며, next() 함수를 호출해야만 다음 로직을 수행한다
+<br />
+
+### 라우팅
+- 요청한 url에 대해 적절한 핸들링(처리하거나 관리하는) 함수로 연결해 주는 기능
+- express는 라우팅을 위한 Router라는 클래스도 있다
+<br />
+
+### req, res 관련 메소드
+req 메소드
+- req.params
+- req.query 
+- req.body
+- req.headers
+
+res 메소드
+- res.status(code)
+- res.send(body)
+- res.json(json)
+<br /><br />
 
 ## 디렉토리의 구조
 
@@ -19,7 +49,7 @@ express_tutorial/
  └── index.html
 ```
 express의 디렉토리 구조 이다
-<br />
+<br /><br />
 
 ## Express 서버 사용법
 
@@ -44,7 +74,7 @@ $ node server.js
 ```
 
 위 명령어를 입력하면 서버를 동작할 수 있다
-<br />
+<br /><br />
 
 ## nodemon
 nodemond은 서버가 껐다가 켜는 작업을 자동화 시킬 수 있는 라이브러리다
@@ -61,7 +91,7 @@ $ nodemon server.js
 
 명령어로 서버를 실행해준다 <br />
 이제 파일 저장할 때 마다 알아서 서버를 새로 시작해준다
-<br />
+<br /><br />
 
 ## GET 요청
 get()은 주소창에 입력 받을 때 실행할 사항들을 나타내는 라우트함수 <br />
@@ -133,13 +163,10 @@ app.post('/login', function(req, res){
 ```
 
 form을 쓰기위해서는 body-parser 미들웨어를 사용해야된다
-<br />
+<br /><br />
 
 ## body-parser 미들웨어
 body-parser 는 node.js 모듈로 클라이언트의 post request body로 부터 파라미터를 추출할 수 있게 해주는 미들웨어
-
-### 미들웨어란?
-클라이언트에서 req(요청),res(응답) 사이 중간(미들)에 위치하는 함수로, 요청과 응답 사이클에서 중간에 거쳐가는 함수들이라고 생각하면된다.
 
 ```
 $ npm install body-parser

@@ -35,6 +35,7 @@
 
 - [Express](Node.js/Express.md)
 - [NodeJS](Node.js/Nodejs.md)
+- [NPM](Node.js/NPM.md)
 - [REST API](Node.js/REST_API.md)
 
 ---
