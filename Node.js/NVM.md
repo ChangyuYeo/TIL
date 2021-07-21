@@ -1,4 +1,4 @@
-# NVM
+# NVM(Node Version Manager)
 > Node Version Manager의 약자
 - 노드버전을 쉽게 변경할 수 있다.
 <br />
