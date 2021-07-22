@@ -4,7 +4,7 @@
 <br />
 
 ## 라이프사이클 다이어그램
-<img src="https://v3.ko.vuejs.org/images/lifecycle.svg" alt="라이프사이클 다이어그램" style="width: 80%"> <br />
+<img src="https://v3.ko.vuejs.org/images/lifecycle.svg" alt="라이프사이클 다이어그램" style="width: 70%"> <br />
 <a href="https://v3.ko.vuejs.org/guide/instance.html#%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%91%E1%85%B3%E1%84%89%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8F%E1%85%B3%E1%86%AF-%E1%84%83%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%80%E1%85%B3%E1%84%85%E1%85%A2%E1%86%B7">[참고문서]</a>
 
 1. Vue.createApp 이라는 메소드를 이용해 프로젝트를 시작하고, mount라는 메소드로 HTML 구조에 연결한다
