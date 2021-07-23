@@ -73,7 +73,7 @@ export default {
 <br />
 
 이코드의 결과는 다음과 같다 
-<br />
-<img src="./image/Lifecycle.PNG" alt="실행결과">
+<br /><br />
+<img src="./image/Lifecycle.PNG" alt="실행결과" style="margin: 30px">
 
 설명 추가해줘ㅓㅓ엉
