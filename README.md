@@ -15,9 +15,9 @@
 ## Index
 
 ### 📌Javascript
-- [Arrowfunction](Javascript/ArrowFunction.md)
+- [ArrowFunction](Javascript/ArrowFunction.md)
 - [SpreadOperator](Javascript/SpreadOperator.md)
-- [Templateliterals](Javascript/TemplateLiterals.md)
+- [TemplateLiterals](Javascript/TemplateLiterals.md)
 - [This](Javascript/This.md)
 - [Variable](Javascript/Variable.md)
 
