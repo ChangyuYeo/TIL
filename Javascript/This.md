@@ -19,6 +19,7 @@ console.log(this)
 ```
 
 다음과 같이 **window 객체**를 확인할 수 있다
+<br />
 <img src="./image/this.PNG" alt="window 객체 캡쳐" style="margin: 20px">
 <br />
 
@@ -80,8 +81,6 @@ object.test()
 <br />
 
 ### constructor 안에서 사용하면 constructor 새로생성되는 오브젝트를 가르킨다
-<br />
-
 #### constructor(생성자) 란?
 자바스크립트에서 오브젝트를 비슷한걸 여러개 만들고 싶을 경우 **constructor** 라는걸 만들어서 사용한다 <br />
 쉽게 말해서 **constructor**는 오브젝트를 복사해서 생성해주는 특별한 메소드라고 생각하면 된다
@@ -143,8 +142,8 @@ let object = new constructor()
 ```
 
 콘솔창의 결과는 window가 출력이 되는걸 볼 수가 있다
-<br />
-<img src="./image/eventlistener2.PNG" alt="콜백 this결과 캡처" style="margin: 20px" />
+<br /><br />
+<img src="./image/eventlistener2.PNG" alt="콜백 this결과 캡처" style="margin: 40px" />
 <br />
 저런 콜백함수는 일반함수랑 똑같은 취급을 하기 때문에 window가 출력이 된다.
 <br />
@@ -167,8 +166,8 @@ let object = new constructor()
 ```
 
 forEach()안에 콜백함수도 **일반 함수**이기 때문에 window 객체가 출력이 되는걸 볼 수가 있다.
-<br />
-<img src="./image/objectCallback.PNG" alt="콜백 this결과 캡처" style="margin: 20px" />
+<br /><br />
+<img src="./image/objectCallback.PNG" alt="콜백 this결과 캡처" style="margin: 40px" />
 <br />
 
 #### Arrow Function인 경우
@@ -189,5 +188,5 @@ forEach()안에 콜백함수도 **일반 함수**이기 때문에 window 객체�
 ```
 
 결과 화면
-<br />
-<img src="./image/arrowfunction.PNG" alt="콜백 this결과 캡처" style="margin: 20px" />
+<br /><br />
+<img src="./image/arrowfunction.PNG" alt="콜백 this결과 캡처" style="margin: 40px" />

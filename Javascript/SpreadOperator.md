@@ -24,7 +24,7 @@ console.log(...str)
 - 두번째 결과는 H e l l o 로 출력이 된다.
 
 spread를 문자열에 사용하면 문자를 하나씩 펼쳐준다고 생각하면 된다.
-<br />
+<br /><br />
 
 ## Spread Operator 활용하기
 ### 서로다른 참조 타입 (Reference Type) 합치기
@@ -89,7 +89,7 @@ console.log(b)
 ```
 
 spread를 사용하게되면 `Reference Type`에서도 deep copy가 가능하다.
-<br />
+<br /><br />
 
 ### (참고) 원시타입(primitive type)과 참조타입(reference type)
 자바스크립트의 자료형은 크게 두가지의 형태가 있다
@@ -122,7 +122,7 @@ sum(...array)
 배열의 있는 모든 숫자항목들이 sum() 함수의 파라미터로 넣기 위해 spread 연산자를 사용한 코드이다. 
 <br />
 출력했을 때 1, 2, 3을 더해준 결과 6이 출력이 되는 것을 볼 수 있다.
-<br />
+<br /><br />
 
 #### apply 함수와 call 함수
 spread 연산자가 없던 시절에는 `apply()` 함수를 사용해 기능을 구현했다. 
@@ -137,7 +137,7 @@ var array = [1, 2, 3]
 sum.apply(undefuned, array)
 ```
 해석하자면 sum() 함수를 실행하는데 undefined에 적용해서 실행하고, 파라미터로 array를 사용하겠다는 뜻이다
-<br />
+<br /><br />
 
 다른 예제로 array() 함수를 써보았다.
 <br />
@@ -158,7 +158,7 @@ var data2 = {
 위에 코드있는 data의 func()라는 함수를 data2에서 사용을 할려면 apply() 함수를 사용한다
 <br />
 apply() 함수는 쉽게 생각해 이 함수를 실행하는데 저 오브젝트에다가 적용해서 실행하겠다는 뜻이다.
-<br />
+<br /><br />
 
 ```javascript
 var data = {
@@ -181,7 +181,7 @@ array() 함수를 실행하여 data.func() 함수를 실행하는데 data2라는
 <br />
 > array()와 call()의 차이점 <br />
 > call 메소드는 인자 하나 하나를, apply는 인자 리스트를 전달
-
+<br />
 
 ```javascript
     var data = {
@@ -200,5 +200,6 @@ array() 함수를 실행하여 data.func() 함수를 실행하는데 data2라는
     data.func.call(data2, 1, 2)
 ```
 
-코드를 보면 apply와 call은 파라미터를 넘기는 방법을 제외하고 똑같은 실행결과를 출력하는 것을 알 수 있다. <br />
-<img src="./image/apply.PNG" alt="apply 결과 화면 캡처" style="margin: 20px"/>
+코드를 보면 apply와 call은 파라미터를 넘기는 방법을 제외하고 똑같은 실행결과를 출력하는 것을 알 수 있다. 
+<br /><br />
+<img src="./image/apply.PNG" alt="apply 결과 화면 캡처" style="margin: 30px"/>
