@@ -14,8 +14,6 @@
 
 ## Index
 
----
-
 ### 📌Javascript
 - [Arrowfunction](Javascript/ArrowFunction.md)
 - [SpreadOperator](Javascript/SpreadOperator.md)
@@ -50,5 +48,3 @@
 - [Lifecycle](Vue/Lifecycle.md)
 - [Styling](Vue/Styling.md)
 - [Vuex](Vue/Vuex.md)
-
----
