@@ -16,6 +16,13 @@
 
 ### 📌Javascript
 - [ArrowFunction](Javascript/ArrowFunction.md)
+- [Class](Javascript/Class.md)
+- [Constructor](Javascript/Constructor.md)
+- [Extends](Javascript/Extends.md)
+- [Function_ES6](Javascript/Function_ES6.md)
+- [Getter_Setter](Javascript/Getter_Setter.md)
+- [Prototype](Javascript/Prototype.md)
+- [Reference](Javascript/Reference.md)
 - [SpreadOperator](Javascript/SpreadOperator.md)
 - [TemplateLiterals](Javascript/TemplateLiterals.md)
 - [This](Javascript/This.md)
