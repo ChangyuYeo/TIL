@@ -61,7 +61,7 @@ var children = new Parent();
 오브젝트에 함수를 추가하듯이 추가해주면 된다.
 <br />
 그럼 생성자함수로 만들어진 자식은 func()이라고 썻을 때 부모의 prototype에 있던 func() 함수를 사용할 수 있다.
-<br />
+<br /><br />
 
 ### (참고)Object.getPrototypeOf()
 > 이 함수 안에 오브젝트를 넣으면 부모 prototype을 출력해준다. <br />
