@@ -12,7 +12,8 @@ var num3 = array[2]
 ```
 
 `destructuring` 문법을 사용하지 않고 기존에 방법으로 배열 안에 데이터를 꺼낸 방법이다.
-<br />
+<br /><br />
+
 여기서 `destructuring` 문법을 사용해 더 쉽게 만들 수 있다.
 <br />
 
@@ -22,7 +23,7 @@ var [ num1, num2, num3 ] = array
 ```
 
 이전 코드보다 더 쉽고 직관적으로 바뀌였다.
-<br />
+<br /><br />
 
 참고로 디폴트 값을 설정할 수 있다.
 <br />
@@ -33,7 +34,7 @@ var [ num1, num2, num3, num4 = 10 ] = array
 ```
 
 num4는 아무 값도 안들어오는 경우 10이라는 기본 값을 할당해 줘서 undefined가 할당되는 것을 방지 할 수 있다.
-<br />
+<br /><br />
 
 ## Object 안에 데이터를 변수로 담는 방법
 

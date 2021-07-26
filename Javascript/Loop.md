@@ -20,15 +20,13 @@ for in 반복문은 해당 오브젝트의 자료 내부 데이터 갯수 만큼
 <br /><br />
 
 ### for in 특징
-1. `enumerable` 만 출력한다.
-<br />
+1. `enumerable` 만 출력한다.<br />
 enumerable 라는 값이 true인 자료들만 for in 반복문을 사용할 수 있는데
 <br />
 보통 Object 자료형이 enumerable 속성을 가지고 있다.
 <br /><br />
 
-2. 부모 prototype에 저장된 것도 출력해준다.
-<br />
+2. 부모 prototype에 저장된 것도 출력해준다.<br />
 Object의 부모 프로토타입에 있는 속성도 반복문으로 출력할 수 있다.
 <br />
 
@@ -46,7 +44,7 @@ for (let key in obj) {
 ```
 
 결과를 보면 부모가 가지고 있는 데이터의 값도 출력을 해주는 것을 볼 수 있다.
-<br />
+<br /><br />
 if문을 이용해서 이 현상을 방지할 수 있다.
 <br />
 
