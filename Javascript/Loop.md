@@ -20,9 +20,8 @@ for in 반복문은 해당 오브젝트의 자료 내부 데이터 갯수 만큼
 <br /><br />
 
 ### for in 특징
-1. `enumerable` 만 출력한다.<br />
-enumerable 라는 값이 true인 자료들만 for in 반복문을 사용할 수 있는데
-<br />
+1. `enumerable` 만 출력한다. <br />
+enumerable 라는 값이 true인 자료들만 for in 반복문을 사용할 수 있는데<br />
 보통 Object 자료형이 enumerable 속성을 가지고 있다.
 <br /><br />
 
