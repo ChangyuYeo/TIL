@@ -1,7 +1,7 @@
 # Symbol
 ES6 부터 Symbol 이라는 `Primitive` 자료형이 하나 추가되었는데, 
 <br />
-`유일한 식별자` 를 만들고 싶을 때 사용한다.
+Symbol은 코드 내에서 `유일한 값`을 가진 변수 이름을 만들 때 사용
 <br /><br />
 
 ## Symbol 생성
@@ -53,16 +53,34 @@ console.log(people[age]) // 24
 ### symbol를 비교하면?
 
 ```javascript
-const symbol1 = Symbol('mySymbol')
-const symbol2 = Symbol('mySymbol')
+const symbol = Symbol('mySymbol')
 
-console.log(symbol1 === symbol2) // false
+symbol === 'mySymbol' // false
+symbol === 'symbol' // false
+symbol === 'Symbol' // false
+symbol === true // false
+symbol === false // false
+symbol === 0 // false
+symbol === null // false
+symbol === undefined // false
 ```
 
-두 심볼은 같은 설명인데도 불구하고 두 심볼을 비교해보면 false가 출력이 된다.
+symbol 값을 담게 된 user라는 이름의 변수는 다른 어떤 값과 비교해도 true가 될 수 없는 고유한 변수 인데,
+<br />
+
+```javascript
+const symbol = Symbol('mySymbol')
+const symbol2 = Symbol('mySymbol')
+
+console.log(symbol === symbol2) // false
+```
+
+심지어 두 심볼은 같은 설명인데도 불구하고 두 심볼을 비교해보면 false가 출력이 된다.
 <br />
 symbol은 Symbol()이라고 사용할 때마다 각각 유니크한 symbol이 생성되어 그렇다.
 <br /><br />
+
+
 
 ### symbol의 전역 심볼
 symbol이 같은 값을 가지면 같은 symbol로 취급해주는 전역 symbol을 만들 수 있다.
