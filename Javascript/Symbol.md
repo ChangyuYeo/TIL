@@ -65,7 +65,7 @@ symbol === null // false
 symbol === undefined // false
 ```
 
- 값을 담게 된 symbol라는 이름의 변수는 다른 어떤 값과 비교해도 true가 될 수 없는 고유한 변수 인데,
+심볼 값을 담게 된 symbol라는 이름의 변수는 다른 어떤 값과 비교해도 true가 될 수 없는 고유한 변수 인데,
 <br />
 
 ```javascript
