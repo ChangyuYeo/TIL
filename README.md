@@ -45,6 +45,12 @@
 
 ---
 
+### 📌Python
+
+- [PEP8](Python/PEP8.md)
+
+---
+
 ### 📌React
 
 - [Controlled](React/Controlled.md)
@@ -60,3 +66,4 @@
 - [Lifecycle](Vue/Lifecycle.md)
 - [Styling](Vue/Styling.md)
 - [Vuex](Vue/Vuex.md)
+
