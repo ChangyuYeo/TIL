@@ -47,6 +47,7 @@
 
 ### 📌Python
 
+- [Module]](Python/Module.md)
 - [PEP8](Python/PEP8.md)
 
 ---
