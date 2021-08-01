@@ -9,8 +9,7 @@
 - 주말에는 다시 한번씩 훑어보기
 
 > The only thing worse than starting something and failing ... is not starting something. <br />
-> 무언가를 시작하고 실패하는 것보다 더 나쁜 것은…아무것도 시작하지 않는 것이다. <br />
-> \- Seth Godin
+> 무언가를 시작하고 실패하는 것보다 더 나쁜 것은…아무것도 시작하지 않는 것이다. <br /> \- Seth Godin
 
 <br />
 
@@ -51,6 +50,12 @@
 - [TemplateLiterals](Javascript/TemplateLiterals.md)
 - [This](Javascript/This.md)
 - [Variable](Javascript/Variable.md)
+
+---
+
+### 📌jsp
+
+- [EL](jsp/EL.md)
 
 ---
 
