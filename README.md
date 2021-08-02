@@ -64,8 +64,8 @@
 
 ### 📌Vue
 
-- [ESLint](Vue/ESLint.md)
+- [Computed](Vue/Computed.md)
 - [Lifecycle](Vue/Lifecycle.md)
 - [Styling](Vue/Styling.md)
-- [Vuex](Vue/Vuex.md)
+- [Templatesyntax](Vue/Template_syntax.md)
 
