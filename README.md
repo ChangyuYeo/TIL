@@ -53,6 +53,12 @@
 
 ---
 
+### 📌R
+
+- [Basic syntax](R/Basic_syntax.md)
+
+---
+
 ### 📌React
 
 - [Controlled](React/Controlled.md)
