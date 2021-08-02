@@ -67,5 +67,5 @@
 - [Computed](Vue/Computed.md)
 - [Lifecycle](Vue/Lifecycle.md)
 - [Styling](Vue/Styling.md)
-- [Templatesyntax](Vue/Template_syntax.md)
+- [Template syntax](Vue/Template_syntax.md)
 
