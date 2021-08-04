@@ -2,11 +2,11 @@
 R은 데이터가 어떤 구조 또는 형태로 되어 있느냐에
 따라
 
-1. [Vector](#Vector(벡터))
-1. [Factor](#Factor(요인))
-1. [Matrix](#Matrix(행렬))
-1. [Array](#Array(배열))
-1. [List](#List(리스트))
+1. [Vector](#vector벡터)
+1. [Factor](#factor요인)
+1. [Matrix](#matrix행렬)
+1. [Array](#array배열)
+1. [List](#list리스트)
 
 등으로 구분됨
 <br /><br />
