@@ -77,3 +77,4 @@
 - [Template syntax](Vue/Template_syntax.md)
 - Component
   - [Component](Vue/Component/Component.md)
+  - [Inheritance](Vue/Component/Inheritance.md)
