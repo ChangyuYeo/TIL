@@ -1,4 +1,4 @@
-<-# R은 데이터가 어떤 구조(Structure) 또는 형태로 되어 있느냐에
+# R은 데이터가 어떤 구조(Structure) 또는 형태로 되어 있느냐에
 # 따라 벡터(Vector), 행렬(Matrix), 배열(Array), 데이터
 # 프레임(Data frame), 요인(Factor), 리스트(List) 등으로 구분됨
 

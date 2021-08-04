@@ -56,8 +56,7 @@
 ### 📌R
 
 - [Basic syntax](R/Basic_syntax.md)
-- [Factor](R/Factor.md)
-- [Vector](R/Vector.md)
+- [Structure](R/Structure.md)
 
 ---
 
