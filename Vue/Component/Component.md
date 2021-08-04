@@ -53,11 +53,6 @@ Btn.vue
     cursor: pointer;
     text-align: center;
     background-color: royalblue;
-    &.large {
-      width: 300px;
-      height: 80px;
-      line-height: 80px;
-    }
   }
 </style>
 ```
@@ -203,4 +198,4 @@ export default {
 1. large라는 porps는 boolean형이며, large를 받았을 때 class 바인딩을 통해서 large 클래스를 추가해 줄 수 있고 이를 활용해서 스타일을 만들어 낼 수 있다.
 1. slot을 이용해서 컴포넌트도 일반 html 태그처럼 열고닫는 형태로 사용이 가능해진다.
 
-> 컴포넌트를 열고닫는 사이에 들어간 내용들은 <slot></slot> 을 대채해서 들어간다고 생각하면 된다. <br />
+> 컴포넌트를 열고닫는 사이에 들어간 내용들은 \<slot>\</slot> 을 대채해서 들어간다고 생각하면 된다. <br />
