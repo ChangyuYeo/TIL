@@ -56,6 +56,8 @@
 ### 📌R
 
 - [Basic syntax](R/Basic_syntax.md)
+- [Factor](R/Factor.md)
+- [Vector](R/Vector.md)
 
 ---
 
@@ -70,6 +72,8 @@
 
 ### 📌Vue
 
+- #### Component
+  - [Component](Vue/Component/Component.md)
 - [Computed](Vue/Computed.md)
 - [Lifecycle](Vue/Lifecycle.md)
 - [Styling](Vue/Styling.md)
