@@ -72,9 +72,9 @@
 
 ### 📌Vue
 
-- Component
-  - [Component](Vue/Component/Component.md)
 - [Computed](Vue/Computed.md)
 - [Lifecycle](Vue/Lifecycle.md)
 - [Styling](Vue/Styling.md)
 - [Template syntax](Vue/Template_syntax.md)
+- Component
+  - [Component](Vue/Component/Component.md)
