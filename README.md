@@ -77,4 +77,5 @@
 - [Template syntax](Vue/Template_syntax.md)
 - Component
   - [Component](Vue/Component/Component.md)
+  - [Emit](Vue/Component/Emit.md)
   - [Inheritance](Vue/Component/Inheritance.md)
