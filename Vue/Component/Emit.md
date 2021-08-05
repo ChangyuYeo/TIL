@@ -36,7 +36,7 @@ Btn.vue
 자식 컴포넌트 Btn에는 최상위 요소 하나만 있는 상태고 개발창에서 결과를 확인해보면 버튼을 누를 때마다 콘솔 창에 출력되는 것을 볼 수 있다.
 <br /><br />
 
-만약 Btn 컴포넌트에 최상위 요소가 한 개 이상이거나 ingeritAttrs가 false인 상태라면?
+만약 Btn 컴포넌트에 최상위 요소가 한 개 이상이거나 inheritAttrs가 false인 상태라면?
 
 ```vue
 <template>
@@ -60,7 +60,7 @@ inheritAtter 속성을 false로 해서 실행시켜보면 log()메소드는 실�
 
 <br />
 
-이때 emit을 이용하면 원하는 요소에 이벤트를 설정할 수 있게 된다.
+이때 `emit`을 이용하면 원하는 요소에 이벤트를 설정할 수 있게 된다.
 
 Btn.vue
 ```vue
@@ -171,6 +171,11 @@ event를 출력한 곳이 undefined 으로 나오는 것을 확인 할 수 있�
 ```
 
 해당이벤트의 대한 이벤트 객체가 출력되는 것을 볼 수 있다. 
+
+```
+PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
+```
+
 <br /><br />
 
 ### input태그를 이용한 활용 예시
@@ -209,12 +214,12 @@ Btn.vue
   </div>
   <span @click="$emit('log', $event)">Button</span>
   <input
-    type="text "
+    type="text"
     v-model="msg" />
 </template>
 ```
 
-Btn.vue에서 마지막요소에서 input 태그를 추가한 후에, v-model로 양뱡향 데이터 바인딩을 하도록 설정했고,
+Btn.vue에 마지막요소에서 input 태그를 추가한 후에, v-model로 양뱡향 데이터 바인딩을 하도록 설정했고,
 <br />
 
 ```vue
@@ -222,7 +227,7 @@ Btn.vue에서 마지막요소에서 input 태그를 추가한 후에, v-model로
 export default {
   emits: [
     'log',
-    'changeMsg'
+    'changeMsg' // 추가
   ],
   data() {
     return {
@@ -238,10 +243,13 @@ export default {
 </script>
 ```
 
-- 데이터 바인딩을 할 수 있도록 script에서 msg라는 데이터를 만들었다.
+- 데이터 바인딩을 할 수 있도록 script에서 msg라는 데이터를 만들었고,
 - msg라는 데이터가 변경될때마다 확인을 해주기 위해서 `watch` 옵션을 추가해 msg를 감시하게 설정했다.
 
-> msg라는 데이터가 변경될 때 마다, $emit 메소드를 실행하여, App.vue 에서 설정한 changeMsg 이벤트를 연결하고 this.msg를 데이터를 넘겨준다.
+> msg라는 데이터가 변경될 때 마다, $emit 메소드를 실행하여, App.vue 에서 설정한 changeMsg 이벤트를 연결하고 this.msg를 데이터로 넘겨준다.
+
+<br />
+이제 결과화면에 나오는 input창에 글씨를 입력할 때 마다 콘솔창에 출력되는 결과를 볼 수 있다.
 
 <br /><br />
 
