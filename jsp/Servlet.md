@@ -65,11 +65,16 @@ out.println("<head>");
   - 화면에 표시되어야 하는 데이터는 Controller로부터 전달받는다.
 - Controller
   - Model과 View의 상호작용을 관리한다.
-  - 사용자의 요청을 받으면, 이를 처리할 코드를 Model에서 찾아 실행하고, 사용자에게 보여주어야 할 화면을 View에서 골라 실행한다.
+  - 사용자의 요청을 받으면, 처리할 코드를 Model에서 찾아 실행하고, 사용자에게 보여주어야 할 화면을 View에서 골라 실행한다.
   - 이때 Model이 반환한 데이터가 있으면, View에게 전달하여 그 데이터가 화면에 출력될 수 있도록 한다.
 
-> 이렇게 소프트웨어를 3개의 구성 요소로 나누어 만들면, 데이터처리, 사용자가 보는 페이지, 그리고 이들에 대한 제어, 이 세 종류의 코드들이 각각의 구성 요소에 모여있게 됨 <br />
-> 이것은 프로그램을 작성할 때나 유지 보수할 때 많은 장점이 있어서, 대규모의 비즈니스 애플리케이션을 만들 때는 MVC 패턴을 적용하는 것이 당연하게 여겨지고 있다.
+<br />
+
+> 이렇게 소프트웨어를 3개의 구성 요소로 나누어 만들면, 데이터처리, 사용자가 보는 페이지, <br />
+> 그리고 이들에 대한 제어, 이 세 종류의 코드들이 각각의 구성 요소에 모여있게 됨 <br />
+
+> 이것은 프로그램을 작성할 때나 유지 보수할 때 많은 장점이 있어서, 대규모의 비즈니스 <br />
+> 애플리케이션을 만들 때는 MVC 패턴을 적용하는 것이 당연하게 여겨지고 있다.
 
 <br />
 
@@ -78,28 +83,28 @@ out.println("<head>");
 ```java
 protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
   // URL에서 프로젝트 이름 뒷 부분의 문자열 얻어내기
-	String uri = request.getRequestURI();
-	String conPath = request.getContextPath();
-	String com = uri.substring(conPath.length());
-	String view = null;
+  String uri = request.getRequestURI();
+  String conPath = request.getContextPath();
+  String com = uri.substring(conPath.length());
+  String view = null;
 
-	if (com.equals("/a") || com.equals("/")) {
-		view = "a.jsp";
-	} else if (com.equals("/b")) {
-		view = "redirect:b.jsp";
-	} else if (com.equals("/c")) {
-		view = "redirect:c.jsp";
-	} else if (com.equals("/d")) {
-		view = "d.jsp";
-	} else {
-		response.getWriter().append("404 Not Found!");
-	}
+  if (com.equals("/a") || com.equals("/")) {
+    view = "a.jsp";
+  } else if (com.equals("/b")) {
+    view = "redirect:b.jsp";
+  } else if (com.equals("/c")) {
+    view = "redirect:c.jsp";
+  } else if (com.equals("/d")) {
+    view = "d.jsp";
+  } else {
+    response.getWriter().append("404 Not Found!");
+  }
 
-	// view가 redirect: 으로 시작하는지 검사해서 분기처리 startsWith() 메소드 사용
-	if (view.startsWith("redirect:")) {
-		response.sendRedirect(view.substring(9));
-	} else {
-		request.getRequestDispatcher(view).forward(request, response);
-	}
+  // view가 redirect: 으로 시작하는지 검사해서 분기처리 startsWith() 메소드 사용
+  if (view.startsWith("redirect:")) {
+    response.sendRedirect(view.substring(9));
+  } else {
+    request.getRequestDispatcher(view).forward(request, response);
+  }
 }
 ```
