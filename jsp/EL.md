@@ -23,12 +23,12 @@
   <meta charset="UTF-8">
 </head>
 <body>
-	나이: ${age} <br />
+  나이: ${age} <br />
 
-	5년 뒤 나이: ${age + 5} <br/ >
-	5년 전 나이: ${age - 5} <br/ >
+  5년 뒤 나이: ${age + 5} <br/ >
+  5년 전 나이: ${age - 5} <br/ >
 
-	나이가 20살인가요?: ${age == 20} <br />
+  나이가 20살인가요?: ${age == 20} <br />
 </body>
 </html>
 ```
@@ -102,35 +102,35 @@ public void setName(String name) {
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="com.bean.ex.*" %>
 <%
-	Score score = new Score();
-	score.setName("이진수");
-	score.setKor(85);
-	score.setEng(76);
+  Score score = new Score();
+  score.setName("이진수");
+  score.setKor(85);
+  score.setEng(76);
 
-	request.setAttribute("score1", score);
+  request.setAttribute("score1", score);
 %>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Insert title here</title>
+  <meta charset="UTF-8">
+  <title>Insert title here</title>
 </head>
 <body>
-	<!-- 기존 게시판에서 값 출력할 때 사용한 방식 -->
-	이름: <%=score.getName() %> <br />
-	국어: <%=score.getKor() %> <br />
-	영어: <%=score.getEng() %> <br />
-	<hr />
-	<!-- 내장객체 속성으로 지정한 값을, 표현식으로 출력하는 방식 -->
-	이름: <%=((Score)request.getAttribute("score1")).getName()%> <br />
-	국어: <%=((Score)request.getAttribute("score1")).getKor()%> <br />
-	영어: <%=((Score)request.getAttribute("score1")).getEng()%> <br />
-	<hr />
-	<!-- 내장객체 속성으로 지정한 값을, EL로 출력하는 방식 -->
-	이름: ${score1.name} <br />
-	국어: ${score1.kor} <br />
-	영어: ${score1.eng} <br />
+  <!-- 기존 게시판에서 값 출력할 때 사용한 방식 -->
+  이름: <%=score.getName() %> <br />
+  국어: <%=score.getKor() %> <br />
+  영어: <%=score.getEng() %> <br />
+  <hr />
+  <!-- 내장객체 속성으로 지정한 값을, 표현식으로 출력하는 방식 -->
+  이름: <%=((Score)request.getAttribute("score1")).getName()%> <br />
+  국어: <%=((Score)request.getAttribute("score1")).getKor()%> <br />
+  영어: <%=((Score)request.getAttribute("score1")).getEng()%> <br />
+  <hr />
+  <!-- 내장객체 속성으로 지정한 값을, EL로 출력하는 방식 -->
+  이름: ${score1.name} <br />
+  국어: ${score1.kor} <br />
+  영어: ${score1.eng} <br />
 </body>
 </html>
 ```
