@@ -74,18 +74,18 @@
 
 - [Computed](Vue/Computed.md)
 - [Lifecycle](Vue/Lifecycle.md)
-- [Template syntax](Vue/TemplateSyntax.md)
+- [기본 문법](Vue/TemplateSyntax.md)
 - Component
-  - [Component](Vue/Component/Component.md) [컴포넌트 기본 정리]
-  - [Emit](Vue/Component/Emit.md) [이벤트 발생]
-  - [Attribute Inheritance](Vue/Component/Inheritance.md) [속성 상속]
-  - [Provide](Vue/Component/Provide.md) [Provide / Inject]
-  - [Refs](Vue/Component/Refs.md) [Refs]
-  - [Slot](Vue/Component/Slot.md) [Slot]
+  - [컴포넌트 기본 정리](Vue/Component/Component.md)
+  - [Emit](Vue/Component/Emit.md)
+  - [속성 상속](Vue/Component/Inheritance.md)
+  - [Provide / Inject](Vue/Component/Provide.md)
+  - [Refs](Vue/Component/Refs.md)
+  - [Slot](Vue/Component/Slot.md)
 - Router
-  - [DynamicRoute](Vue/Router/DynamicRoute.md) [동적 라우트 매칭]
-  - [Named Views](Vue/Router/NamedViews.md) [이름을 가지는 뷰]
-  - [Nested Routes](Vue/Router/NestedRoutes.md) [중첩된 라우트]
-  - [Passing Props to Route Components](Vue/Router/PassingPropsToRouteComponents.md) [라우트 컴포넌트에 속성 전달]
-  - [Programmatic Navigation](Vue/Router/ProgrammaticNavigation.md) [프로그래밍 방식 네비게이션]
-  - [Router](Vue/Router/Router.md) [라우트 기본 정리]
+  - [동적 라우트 매칭](Vue/Router/DynamicRoute.md)
+  - [이름을 가지는 뷰](Vue/Router/NamedViews.md)
+  - [중첩된 라우트](Vue/Router/NestedRoutes.md)
+  - [라우트 컴포넌트에 속성 전달](Vue/Router/PassingPropsToRouteComponents.md)
+  - [프로그래밍 방식 네비게이션](Vue/Router/ProgrammaticNavigation.md)
+  - [라우트 기본 정리](Vue/Router/Router.md)
