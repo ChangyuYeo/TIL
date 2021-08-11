@@ -105,7 +105,8 @@ export default {
 ```
 
 Chile 컴포넌트에서는 기존 props의 내용을 지우고 대신 `inject`를 배열 데이터로 추가하여 provide에 명시했던 'msg'를 가져오면 된다.
-<br />
+
+<br /><br />
 <img src="./image/provide.jpg" alt="그림 정리" style="margin: 40px">
 <br /><br />
 
@@ -125,7 +126,9 @@ App.vue
 </template>
 ```
 
-<img src="./image/reactive.PNG" alt="반응성 결과 화면" style="margin: 40px; width: 70%">
+<br /><br />
+<img src="./image/reactive.PNG" alt="반응성 결과 화면" style="margin: 40px" width="40%">
+<br /><br />
 
 결과를 보면 provide로 데이터를 넘겨서 출력하고 있는 child 컴포넌트에 msg는 내용이 갱신되지 않음을 확인할 수 있다.
 <br />
