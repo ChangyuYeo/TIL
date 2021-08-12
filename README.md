@@ -90,6 +90,8 @@
 - [ReactBasic](React/ReactBasic.md)
 - [Router](React/Router.md)
 - [Styling](React/Styling.md)
+- Redux
+  - [ReduxBasic](React/Redux/ReduxBasic.md)
 
 ---
 
