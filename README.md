@@ -92,6 +92,7 @@
 - [Styling](React/Styling.md)
 - Redux
   - [ReduxBasic](React/Redux/ReduxBasic.md)
+  - [ReduxMiddlewear](React/Redux/ReduxMiddlewear.md)
 
 ---
 
