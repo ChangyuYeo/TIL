@@ -91,6 +91,7 @@
 - [Router](React/Router.md)
 - [Styling](React/Styling.md)
 - Redux
+  - [DucksPattern](React/Redux/DucksPattern.md)
   - [ReduxBasic](React/Redux/ReduxBasic.md)
   - [ReduxMiddlewear](React/Redux/ReduxMiddlewear.md)
   - [ReduxThunk](React/Redux/ReduxThunk.md)
