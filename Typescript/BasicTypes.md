@@ -1,22 +1,26 @@
 # BasicTypes
 TypeScript 에서 기본으로 제공하는 데이터 타입 <br />
 사용자가 만든 타입은 결국 `기본 자료형`들로 나누어 진다.
+
+## index
 - ECMAScript 에 따른 기본자료형
-  - [Boolean](##boolean)
-  - Number
-  - String
-  - Null & Undefined
-  - Symbo
-  - Object
-  - Array
+  - [Boolean](#boolean)
+  - [Number](#number)
+  - [String](#string)
+  - [Symbol](#symbol)
+  - [Null & Undefined](#null&undefined)
+  - [Object](#object)
+  - [Array](#array)
 - TypeScript 에서 몇가지 추가된 타입
-  - Any, Void, Never, Unknown
-  - Enum
-  - Tuple (Object 형)
+  - [Tuple](#tuple)
+  - [Any](#any)
+  - [Unknown](#unknown)
+  - [Never](#never)
+  - [Void](#void)
 <br />
 
 
-## boolean
+# boolean
 - 가장 기본적인 데이터 타입
 - 단순한 true 혹은 false를 나타낸다
 
@@ -33,7 +37,7 @@ let isNotOk: boolean = new Boolean(true)
 ```
 <br />
 
-## number
+# number
 - 숫자를 나타내는 가장 기본적인 타입
 - 타입스크립트는 16진수 및 10진수 이외에도 2진수, 8진수를 지원한다.
 - NaN(not a number)와 1_000_000 과 같은 표기도 가능하다.
@@ -49,7 +53,7 @@ let underscoreNum: number = 1_000_000 // 언더바를 이용한 표기
 ```
 <br />
 
-## string
+# string
 - string 타입은 텍스트 형식을 참조하기 위해 사용
 - javascript 와 마찬가지로, 큰 따옴표(") 또는 작은 따옴표(') 를 사용
 
@@ -65,7 +69,7 @@ console.log(people) // 이름은 Changyu Yeo 나이는 24 입니다!
 ```
 <br />
 
-## symbol
+# symbol
 - ES6에 새로 추가된 타입
 - new Symbol 로 사용할 수 없다.
 - Symbol을 함수로 사용해서 Symbol 타입을 만들어 낼 수 있다.
@@ -75,12 +79,13 @@ symbol 타입 사용 예시
 // tsconfig.json 에서 "lib" : [ "ES2015", "DOM" ] 을 설정해야 Symbol 타입 사용이 가능해 진다.
 console.log(Symbol('foo') === Symbol('foo')) // false
 ```
+<br />
 
-> symbol 타입은? <br />
+symbol 타입은?
 > Primitive Type(원시 타입)의 값을 담아서 사용 <br />
 > `고유하고 수정 불가능한 값`으로 만들어준다 <br />
 > 주로 접근을 제어하는데 쓰는 경우가 많다
-<br/>
+<br />
 
 ```typescript
   let sym = Symbol()
@@ -91,7 +96,7 @@ console.log(Symbol('foo') === Symbol('foo')) // false
 ```
 <br />
 
-## null & undefined
+# null & undefined
 - null은 null타입만, undefined은 undefined타입만 가질 수 있다.
 - void 와 마찬가지로, 그 자체로는 그다지 유용하지 않다.
 - 둘다 소문자만 존재함
@@ -106,9 +111,9 @@ let b: undefined = undefined
 
 tsconfig 설정을 하지 않으면 null & undefined은 **다른 모든 타입에 서브타입으로 존재하게 된다**
 
-> string 이나 number에 null 또는 undefined를 할당할 수 있다는 의미이다 <br />
-> 컴파일 옵션(tsconfig)에서  `"strictNullChecks": true`사용하면, null 과 undefined 는 void 나 자기 자신들에게만 할당할 수 있게된다. <br />
-> 이 경우, null 과 undefined 를 할당할 수 있게 하려면, `union type` 을 이용해야 한다
+- string 이나 number에 null 또는 undefined를 할당할 수 있다는 의미이다
+- 컴파일 옵션(tsconfig)에서  `"strictNullChecks": true`사용하면, null 과 undefined 는 void 나 자기 자신들에게만 할당할 수 있게된다.
+- 이 경우, null 과 undefined 를 할당할 수 있게 하려면, `union type` 을 이용해야 한다
 
 ```typescript
 let MyName: string = null // "strict": true 인 경우에는 error
@@ -120,7 +125,7 @@ c = 'Changyu'
 ```
 <br />
 
-### null
+## null
 - 무언가 있는데, 사용할 준비가 덜된 상태라고 생각하면 된다.
 - null 이라는 타입은 null 이라는 값만 가질 수 있다.
 - typeof 연산자를 이용해서 결과를 보면 `object`라는 결과가 나온다.
@@ -133,7 +138,7 @@ console.log(typeof n) // object
 ```
 <br />
 
-### undefined
+## undefined
 - undefined은 값을 할당하지 않은 변수 이다.
 - 사용할 준비가 안된 상태라고 생각하면 된다.
 - object의 property 가 없을 때도 undefined 이다.
@@ -147,7 +152,7 @@ colsoe.log(typeof u) // undefined
 ```
 <br />
 
-## object
+# object
 `Primitive Type(원시 타입)` 이 아닌 `Reference type(참조 타입)`을 나타낼 때 사용한다.
 
 ```typescript
@@ -162,7 +167,7 @@ const person2 = Object.create({name: 'Changyu', age: 24})
 ```
 <br />
 
-## array
+# array
 원래 자바스크립트에서는 array는 object(객체)이다.
 <br />
 
@@ -175,7 +180,7 @@ let arr3: (number | string)[] = [1, 2, 3, '넷'] // union type 을 이용해 만
 ```
 <br />
 
-## tuple
+# tuple
 - 배열인데 타입이 한가지가 아닌 경우
 - 튜플은 배열과 다르게, 여러 타입의 값들을 구겨넣을 수 있는 복합 타입이다.
 - 타입 표현은, 대괄호 안에 원하는 타입과 개수를 넣고싶은 만큼 넣으면 된다.
@@ -194,7 +199,7 @@ const [first, second, third] = person // first: string, second: nunber, third는
 ```
 <br />
 
-## any
+# any
 - any는 어떤 타입이어도 상관없는 타입
 - any는 최대한 사용하지 않는 것이 좋은데 any를 남용하게 되면,
 - 컴파일 타임에 타입 체크가 정상적으로 이뤄지지 않기 때문이다.
@@ -221,7 +226,7 @@ const c = leakingAny({ num: 0 }) // 이경우에 c도 any type 이 되버린다.
 ```
 <br />
 
-## unknown
+# unknown
 - any와 비슷하게 현재 타입 정보를 모를 때 사용
 - 해당 값을 사용할 때 `타입을 확인해야 한다는 점`이 any와의 차이점이다.
 
@@ -243,7 +248,7 @@ if (typeof maybe === 'string') {
 ```
 <br />
 
-## never
+# never
 never type은 모든 type의 subtype 이며, 모든 type에 할당 할 수 있다. <br />
 하지만 , never 에는 어떤 것도 할당할 수 없다 (any 조차 never에게 할당 할 수 없다.)<br />
 
@@ -283,7 +288,7 @@ if (typeof b !== 'string') {
 ```
 <br />
 
-## void
+# void
 - 어떤 타입도 가지지 않은 빈 상태를 의미
 - void type은 값은 없고 타입만 있다.
 - 주로 값을 반환하지 않은 함수의 리턴 타입으로 사용된다.

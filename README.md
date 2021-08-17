@@ -70,6 +70,18 @@
 
 ---
 
+### 📌Sass(SCSS)
+
+- [scss]()
+
+---
+
+### 📌Typescript
+
+- [Basic Types](Typescript/BasicTypes.md)
+
+---
+
 ### 📌Vue
 
 - [Computed](Vue/Computed.md)
