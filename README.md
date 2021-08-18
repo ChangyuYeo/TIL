@@ -79,6 +79,7 @@
 ### 📌Typescript
 
 - [Basic Types](Typescript/BasicTypes.md)
+- [Type Compatibility](Typescript/TypeCompatibility.md)
 
 ---
 
