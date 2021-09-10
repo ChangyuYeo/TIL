@@ -1,4 +1,4 @@
-# BasicTypes
+# 기본 타입 (BasicTypes)
 TypeScript 에서 기본으로 제공하는 데이터 타입 <br />
 사용자가 만든 타입은 결국 `기본 자료형`들로 나누어 진다.
 
