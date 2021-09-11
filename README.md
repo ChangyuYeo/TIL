@@ -11,7 +11,8 @@
 > The only thing worse than starting something and failing ... is not starting something. <br />
 > 무언가를 시작하고 실패하는 것보다 더 나쁜 것은…아무것도 시작하지 않는 것이다. <br />
 > \- Seth Godin
-<br /><br />
+
+<br />
 
 ## Index(목차)
 
@@ -80,6 +81,8 @@
 ### 📌Typescript
 
 - [Basic Types](Typescript/BasicTypes.md)
+- [Index Signatures](Typescript/IndexSignatures.md)
+- [Type Alias](Typescript/TypeAlias.md)
 - [Type Compatibility](Typescript/TypeCompatibility.md)
 
 ---
@@ -104,7 +107,7 @@
   - [프로그래밍 방식 네비게이션](Vue/Router/ProgrammaticNavigation.md)
   - [라우트 기본 정리](Vue/Router/Router.md)
 
-  ---
+---
 
 ### 📌etc
 - [Markdown](etc/Markdown.md)
