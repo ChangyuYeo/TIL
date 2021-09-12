@@ -16,7 +16,20 @@
 
 ## Index(목차)
 
-### 📌Javascript
+### 📌etc
+- [Markdown](etc/Markdown.md)
+
+---
+
+### 📌git
+- [branch](git/branch.md)
+- [commit](git/commit.md)
+- [git](git/git.md)
+- [github](git/github.md)
+
+---
+
+### 📌javascript
 - [ArrowFunction](Javascript/ArrowFunction.md)
 - [Class](Javascript/Class.md)
 - [Constructor](Javascript/Constructor.md)
@@ -38,7 +51,7 @@
 
 ---
 
-### 📌NodeJS
+### 📌nodejs
 
 - [Express](Node.js/Express.md)
 - [NodeJS](Node.js/Nodejs.md)
@@ -48,7 +61,7 @@
 
 ---
 
-### 📌Python
+### 📌python
 
 - [List](Python/List.md)
 - [Module](Python/Module.md)
@@ -56,14 +69,7 @@
 
 ---
 
-### 📌R
-
-- [Basic syntax](R/BasicSyntax.md)
-- [Structure](R/Structure.md)
-
----
-
-### 📌React
+### 📌react
 
 - [Controlled](React/Controlled.md)
 - [HOC](React/HOC.md)
@@ -72,13 +78,13 @@
 
 ---
 
-### 📌Sass(SCSS)
+### 📌scss
 
 - [scss]()
 
 ---
 
-### 📌Typescript
+### 📌typescript
 
 - [Basic Types](Typescript/BasicTypes.md)
 - [Index Signatures](Typescript/IndexSignatures.md)
@@ -87,11 +93,11 @@
 
 ---
 
-### 📌Vue
+### 📌vue
 
 - [Computed](Vue/Computed.md)
 - [Lifecycle](Vue/Lifecycle.md)
-- [기본 문법](Vue/TemplateSyntax.md)
+- [TemplateSyntax](Vue/TemplateSyntax.md)
 - Component
   - [컴포넌트 기본 정리](Vue/Component/Component.md)
   - [Emit](Vue/Component/Emit.md)
@@ -106,8 +112,3 @@
   - [라우트 컴포넌트에 속성 전달](Vue/Router/PassingPropsToRouteComponents.md)
   - [프로그래밍 방식 네비게이션](Vue/Router/ProgrammaticNavigation.md)
   - [라우트 기본 정리](Vue/Router/Router.md)
-
----
-
-### 📌etc
-- [Markdown](etc/Markdown.md)
