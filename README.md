@@ -15,12 +15,6 @@
 
 ## Index(목차)
 
-### 📌etc
-
-- [Markdown](etc/Markdown.md)
-
----
-
 ### 📌git
 
 - [branch](git/branch.md)
