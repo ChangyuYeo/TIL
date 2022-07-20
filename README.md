@@ -47,14 +47,6 @@
 
 ---
 
-### 📌jsp
-
-- [EL](jsp/EL.md)
-- [JSTL](jsp/JSTL.md)
-- [Servlet](jsp/Servlet.md)
-
----
-
 ### 📌nodejs
 
 - [Express](nodejs/Express.md)
