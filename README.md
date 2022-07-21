@@ -59,7 +59,6 @@
 
 ### 📌python
 
-- [DataFrame](Python/DataFrame.md)
 - [List](Python/List.md)
 - [Module](Python/Module.md)
 - [Numpy](Python/Numpy.md)
