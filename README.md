@@ -59,7 +59,6 @@
 
 ### 📌python
 
-- [List](Python/List.md)
 - [Module](Python/Module.md)
 - [Numpy](Python/Numpy.md)
 - [PEP8](Python/PEP8.md)
