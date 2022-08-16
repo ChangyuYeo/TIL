@@ -59,7 +59,6 @@
 
 ### 📌python
 
-- [PEP8](Python/PEP8.md)
 - [PythonBasic](Python/PythonBasic.md)
 - [PythonOOP](Python/PythonOOP.md)
 
