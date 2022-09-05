@@ -59,7 +59,6 @@
 
 ### 📌python
 
-- [PythonBasic](Python/PythonBasic.md)
 - [PythonOOP](Python/PythonOOP.md)
 
 ---
