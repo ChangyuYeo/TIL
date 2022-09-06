@@ -59,8 +59,6 @@
 
 ### 📌python
 
-- [PythonOOP](Python/PythonOOP.md)
-
 ---
 
 ### 📌react
