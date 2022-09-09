@@ -59,8 +59,6 @@
 
 ### 📌python
 
----
-
 ### 📌react
 
 - [Controlled](React/Controlled.md)
